@@ -2,7 +2,7 @@
 # ByteBot
 En robot för som jag ske ge bort I jul gåva.
 
-![ByteBot](./Images/ByteBot.png)
+![ByteBot](../design/Images/ByteBot.png)
 
 # Strukturen på repot
 Så här är strukturen på repositoryt organiserat.

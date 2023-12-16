@@ -1,2 +1,5 @@
-# ByteBot
-A small robot for developed as a christmas gift.
+# ByteBot an Christmas gift
+[Svenska](./README_sv.md)
+
+![ByteBot] (./Images/ByteBot.png)
+

@@ -1,0 +1,22 @@
+# FreeCAD
+*.FCStd1
+*.pyc
+*.tmp
+__pycache__
+*.FCStd1~
+*.bak
+*.backup
+
+# Thumbnails
+*.FCStd1_thumb.png
+
+# Backup files
+*~
+*.bak
+*.orig
+*.rej
+
+
+# Misc
+.DS_Store
+Thumbs.db

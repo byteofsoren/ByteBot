@@ -1,5 +1,4 @@
 # ByteBot an Christmas gift
-[Svenska](./README_sv.md)
+[Svenska](./docs/README_sv.md)
 
-![ByteBot] (./Images/ByteBot.png)
-
+![ByteBot](design/Images/ByteBot.png)

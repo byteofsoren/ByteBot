@@ -34,7 +34,8 @@ För att bygga roboten så ska vi göra följande steg genom att klicka på vard
 3. [Montera motorerna](montera_motorer.md)
 4. [Montera kul jul](montera_kuljul.md)
 5. [Montera elektroniken](montera_elektroniken.md)
-6. [Koppla elektroniken](kopla_elektroniken.md)
+6. [Introduktion till Programmering](./intro_programmering.md)
+7. [Koppla elektroniken](kopla_elektroniken.md)
 
 
 

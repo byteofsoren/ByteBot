@@ -43,31 +43,10 @@ Nu kan det se ut ungefär så här (beroende på vilken sida du skruvar fast) n�
 
 
 ```
-Om du sett denna rad förut{
-    Gå till baka till 2 och gör den andra motorn.
+if (reader == you && observed.firstTime) {
+    goto 2;
 }
 ```
-
-# 3. Montering av bakhjul.
-
-Plocka två skruvar från låda två och skjut in dem i hålen som på bilden nedan.
-
-![bytebot bakhjul skruvar](../photos/bytebot_backwheel_screws.jpg "opt title")
-
-Från lådan plocka fram saken med en spel kula i och skruva fast den på de skruvar som du satte i bas plattan.
-
-![bytebot bakhjul montering](../photos/bytebot_bakhjul_montering.jpg "opt title")
-
-Skruva av den övre delen och plocka ur spel kulan.
-Från låda fem plocka fram distans blocket och soppa ner det i hålet.
-
-![bytebot bakhjul distans block](../photos/bytebot_bakhjuls_distans.jpg "opt title")
-
-Sedan stoppar du i fjädern från låda fem.
-
-![bytebot fjäder montering](../photos/bytebot_fjader.jpg "opt title")
-
-
 Försök försiktigt att skicka igenom kablarna till motorn igenom hålet.
 
 ![bytebot motor kablar](../photos/bytebot_motor_cable.jpg "opt title")
@@ -78,6 +57,7 @@ Så att de kommer ut genom andra sidan.
 
 Nu kan du sätta dit däcken som finns i den stora lådan.
 
-[Fortsätt till montering av elektroniken.](./montera_elektroniken.md)
+[Gå vidare med att montera bakhjulet](./montera_kuljul.md)
+
 
 

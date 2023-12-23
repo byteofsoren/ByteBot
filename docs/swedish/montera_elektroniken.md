@@ -14,5 +14,11 @@ Observera de två brons gängorna som man kan använda för att skruva fast kort
 ![bytebot Arduino montering](../photos/bytebot_arduino.jpg "opt title")
 
 Notera att skruvarna inte behöver dras fast hårt.
+Montera motor kontrollen med det svarta blocket framåt.
 
-Gör samma för motor kontrollen.
+![bytebot montera motor kontroller](../photos/bytebot_motorcontroller.jpg "opt title")
+
+
+Två skruvar behövs.
+
+[Fortsätt med introduktion till programmering](./intro_programmering.md)

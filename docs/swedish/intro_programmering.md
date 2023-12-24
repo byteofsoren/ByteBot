@@ -19,6 +19,11 @@ if milk exists in frige{
     pore milk in glas.
 }
 ```
+Den nya raden som börjar med `if` är ett så kallad villkor.
+Villkoret ser i det här fallet till att det finns en mjölk i kylskåpet och endast om det finns det tar vi fram mjölken i kylskåpet, serverar mjölken i ett glas.
+Finns det ingen mjölk gör vi inget.
+
+![bytebot ifmilk](../uml/ifmilk.png "If milk exists in glas)
 
 Nu är det så att datorer och robotar är väldigt dumma och kan bara göra det du säger åt dem att göra.
 Så vi kan inte plocka ut mjölken ur kylskåpet utan att gå till kylskåpet och öppna dörren.
@@ -160,17 +165,73 @@ int main(void){
 }
 ```
 
-I det språket vi ska använda för att programmera roboten "C" så heter start funktionen `main`.
-Men I just Arduino fallet så har `main` bytts ut mot dessa två anrop.
+Som du kanske har noterat under de senaste snuttarna av programmering så har vi introducerat ett antal symboler.
+Exempelvis har vi Symbolerna `;{}()`
+
+``` C
+do_a_thing(); do_anoher_thing();
+```
+Fungerar bara för att vi har `;` symbolen i mellan medan den här under kommer att skapa ett felmeddelande.
+
+``` C
+do_a_thing() do_anoher_thing()
+```
+Symbolerna `{}` talar om programmet att händelserna innanför hör tillsammans och körs i grupp.
+Så exempelvis har vi två programmen nedan.
+
+``` c
+// Utan {}
+funktionA()
+    do_a_thing();
+    do_anoher_thing();
+
+// Med {}
+FunktionB(){
+    do_a_thing();
+    do_anoher_thing();
+}
+```
+
+So kommer fall `funktionA()` att orsaka ett felmeddelande på grund av att `do_anoher_thing()` inte tillhör `funktionA()`.
+Medan fallet för `funktionB()` kommer att fungera och köra både `do_a_thing()` och `do_anoher_thing()` tillhör en funktion.
+
+# Funktioner och variabler.
+Som i exemplet ovan finns det något som kallas funktioner.
+Dessa funktioner används för att göra programmet enklare att läsa, förstå och gör det möjligt att kalla på funktionen på olika ställen i programmet.
+Men för att vi ska kunna utforska ämnet vidare måste vi förs bekanta oss med variabler.
+
+En variabel är ett ställe att spara information, så att den kan använda den senare i programmet.
+Låt säga att du vill att programmet ska hålla reda på ditt och hundens namn.
+Då kanske programmet ser ut ungefär så hår:
 
 ```
-void setup(){
-    code...;
-}
+myname = "Kalle";
+mydog  = "Pluto";
 
-void loop(){
-    code...;
-}
+print("%s äger en hund som heter $s.", myname, mydog);
+```
+Som då skulle skriva ut:
+
+```
+Kalle äger en hund som heter Pluto.
 ```
 
-Vi fortsätter senare.
+Notera att jag ska förklara `print()` och `%s` senare.
+Åter till funktioner igen och varför jag var tvungen att förklara variabler innan.
+De festa funktioner som skrivs och används åter igen och igen.
+Diagrammet nedan visar hur funktionen används för att skapa texten från  `print()` anropet ovan fast på ett sätt så att det går enkelt att framkalla samma text åter och åter igen.
+
+![bytebot funktioner](../uml/functioncall.png "funktions anrop")
+
+
+Här ser du att start anropar funktion med variablerna `myname` och `mydog` satta till olika värden och får på så sätt olika resultat beroende på värdet.
+
+
+
+
+
+Fortsätt med [Arduino programmering](./arduino_programmering.md)
+
+
+
+

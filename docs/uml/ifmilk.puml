@@ -1,0 +1,10 @@
+@startuml
+start
+
+if (milk exists in frige) then (yes)
+  :get milk from fridge;
+  :pore milk in glass;
+endif
+
+stop
+@enduml

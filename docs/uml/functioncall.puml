@@ -1,0 +1,7 @@
+@startuml
+skinparam sequenceMessageAlign right
+Start-> Funktion: myname=Kalle, mydog=Pluto
+Funktion-> Start: Kaalle har en hund som heter Pluto
+Start-> Funktion: myname=Musse, mydog=Ferdinan
+Funktion-> Start: Musse har en hund som heter Ferdinan
+@enduml

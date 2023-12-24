@@ -23,7 +23,7 @@ Den nya raden som börjar med `if` är ett så kallad villkor.
 Villkoret ser i det här fallet till att det finns en mjölk i kylskåpet och endast om det finns det tar vi fram mjölken i kylskåpet, serverar mjölken i ett glas.
 Finns det ingen mjölk gör vi inget.
 
-![bytebot ifmilk](../uml/ifmilk.png "If milk exists in glas)
+![bytebot ifmilk](../uml/ifmilk.png "If milk exists in glas")
 
 Nu är det så att datorer och robotar är väldigt dumma och kan bara göra det du säger åt dem att göra.
 Så vi kan inte plocka ut mjölken ur kylskåpet utan att gå till kylskåpet och öppna dörren.

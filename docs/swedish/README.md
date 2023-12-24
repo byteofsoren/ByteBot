@@ -2,15 +2,10 @@
 # ByteBot
 En robot för som jag ske ge bort I jul gåva.
 
-![ByteBot](../design/Images/ByteBot.png)
+![ByteBot](../../design/Images/ByteBot.png)
 
-# Strukturen på repot
-Så här är strukturen på repositoryt organiserat.
-* ./cad_files innehåller alla FreeCAD filerna.
-* ./step_files Inehåller alla filer som används vid utskrift
-* ./Images Är en katalog med bilder på projektet
 
-# Sortiment lista
+# (Skippa) Sortiment lista
 Dessa saker behövs utöver de 3D skrivna sakerna som finns här.
 
 * Arduio
@@ -22,10 +17,6 @@ Dessa saker behövs utöver de 3D skrivna sakerna som finns här.
 * M3 fyrkants muttrar
 * M3 varma hylsor med gänga från tex CNCkitchen
 
-# Dokumentation
-För att roboten ska kunna göra något i huvud taget måste vi bygga den, koppla den och programmera den.
-
-Notis: När jag ger bort roboten så har vissa saker redan monteras. När ett moment redan här gjort så står det (Skippa) i texten.
 ## Bygga roboten
 För att bygga roboten så ska vi göra följande steg genom att klicka på vardera länk.
 
@@ -35,9 +26,12 @@ För att bygga roboten så ska vi göra följande steg genom att klicka på vard
 4. [Montera kul jul](montera_kuljul.md)
 5. [Montera elektroniken](montera_elektroniken.md)
 
-# Programmering
+# Programmering 1
 6. [Introduktion till Programmering](./intro_programmering.md)
-7. [programmering av Arduino](programmering_arduino.md)
+7. [Installera programvara på dator](./installera_arduino.md)
+7. [Programmering av Arduino](programmering_arduino.md)
+
+# Elektronik 1
 7. [Koppla elektroniken](kopla_elektroniken.md)
 
 

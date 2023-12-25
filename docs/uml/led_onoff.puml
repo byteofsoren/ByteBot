@@ -1,0 +1,8 @@
+@startuml
+start
+: Tänd lysdiod;
+: Vänta 1 sekund;
+: Släck lysdiod;
+: Vänta 1 sekund;
+stop
+@enduml

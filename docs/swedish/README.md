@@ -29,10 +29,10 @@ För att bygga roboten så ska vi göra följande steg genom att klicka på vard
 # Programmering 1
 6. [Introduktion till Programmering](./intro_programmering.md)
 7. [Installera programvara på dator](./installera_arduino.md)
-7. [Programmering av Arduino](programmering_arduino.md)
+7. [Programmering av Arduino](./arduino_programmering.md)
 
 # Elektronik 1
-7. [Koppla elektroniken](kopla_elektroniken.md)
+7. [Koppla elektroniken](kopla_elektroniken.md) (Inte klart än)
 
 
 

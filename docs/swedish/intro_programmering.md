@@ -1,22 +1,22 @@
 # 1. Introduktion till programmering.
 Vi börjar med att diskutera programmering som genom att använda procedurmässiga språk.
 Det betyder att vi försöker beskriva vad vi vill göra i klar språk utan komplexiteten av riktig programmera.
-Efter som "alla" programmering språk är skrivna på engelska så skriver vi det på engelska.
+Efter som "alla" programmering språk är skrivna på engelska så skriver vi det på engelska men genom att använda kommentarer bakom `//` så översätter jag det till svenska.
 
 Som första exempel så antar vi att en robot ska hämta mjölken ur kylskåpet och hälla upp ett glas mjölk.
 
 ```
-get milk from fridge.
-pore milk in glas.
+get milk from fridge. // Ta mjölken från kylskåpet.
+pore milk in glas.    // Häll mjölken i glaset.
 ```
 
 Det ser ut som att det skulle fungera men vad händer om det inte finns någon mjölk.
 Ska vi då fortsätta med att hälla upp mjölken trots att den inte existerar?
 
 ```
-if milk exists in frige{
-    get milk from fridge.
-    pore milk in glas.
+if milk exists in frige{  // Om mjölken existerar i kylskåpet.
+    get milk from fridge. // Ta mjölken från kylskåpet.
+    pore milk in glas.    // Häll mjölken i glasset.
 }
 ```
 Den nya raden som börjar med `if` är ett så kallad villkor.
@@ -29,11 +29,11 @@ Nu är det så att datorer och robotar är väldigt dumma och kan bara göra det
 Så vi kan inte plocka ut mjölken ur kylskåpet utan att gå till kylskåpet och öppna dörren.
 
 ```
-walk to fridge;
-open fridge dor;
-if milk exists in frige{
-    get milk;
-    pore milk in glas;
+walk to fridge;             // Gå til kylskåpet.
+open fridge dor;            // Öppna kylskåpet.
+if milk exists in frige{    // Om mjölken existerar I kylskåpet
+    get milk from fridge.   // Ta mjölken från kylskåpet.
+    pore milk in glas.      // Häll mjölken i glasset.
 }
 ```
 
@@ -41,33 +41,33 @@ Nu ser du att roboten ska gå till kylskåpet och hämta mjölken, men när kom 
 Så du måste se till att roboten hämtar glaset först.
 
 ```
-walk to cabinet;
-get glas;
-place glas on table;
-walk to fridge;
-open fridge dor;
-if milk exists in frige{
-    get milk;
-    go to table;
-    pore milk in glas;
+walk to cabinet;            // Gå till skåpet med glas.
+get glas;                   // Plocka fram glaset från skåpet.
+place glas on table;        // Ställ glaset på bordet.
+walk to fridge;             // Gå til kylskåpet.
+open fridge dor;            // Öppna kylskåpet.
+if milk exists in frige{    // Om mjölken existerar I kylskåpet
+    get milk from fridge.   // Ta mjölken från kylskåpet.
+    go to table;            // Gå till bordet.
+    pore milk in glas.      // Häll mjölken i glasset.
 }
 ```
 
 Men om kabinettet inte har ett glas måste du avbryta ditt program så att roboten inte går och häller mjölk i ett glas som inte existerar.
 
 ```
-walk to cabinet;
-if glas not exists in cabinet{
-    stop;
+walk to cabinet;            // Gå till skåpet med glas.
+if glas not exists in cabinet{ // Om det INTE existerar ett glas i skåpet.
+    stop;                   // Avbryt, gör inget.
 }
-get glas;
-place glas on table;
-walk to fridge;
-open fridge dor;
-if milk exists in frige{
-    get milk;
-    go to table;
-    pore milk in glas;
+get glas;                   // Plocka fram glaset från skåpet.
+place glas on table;        // Ställ glaset på bordet.
+walk to fridge;             // Gå til kylskåpet.
+open fridge dor;            // Öppna kylskåpet.
+if milk exists in frige{    // Om mjölken existerar I kylskåpet
+    get milk from fridge.   // Ta mjölken från kylskåpet.
+    go to table;            // Gå till bordet.
+    pore milk in glas.      // Häll mjölken i glasset.
 }
 ```
 
@@ -102,10 +102,39 @@ Funktioner definieras så här:
 
 ```
 output type fuction_name(input variables){
-    code..
-    return output;
+    // Vilken cod som helst.
+    return output;  //
 }
 ```
+
+I från skolan kanske ni har provat funktioner i matten?
+Exempelvis funktionen:
+
+$$y = a*x + b$$
+
+Och när ni ska räkna eller göra det till en graf så kanske ni får sätta upp en tabell.
+Exempelvis låt $a=5$ och $b=-2$ då får vi funktionen:
+
+$$ y = 5*x - 2 $$
+
+Sätter vi upp en tabell för alla värden mellan $-2$ och $5$ så kan en tabell se ut ungefär så här:
+
+| x | -2 | -1 | 0 | 1 | 2 | 3 | 4 | 5 |
+| y | -12 | -7 | -2 | 3 | 8 | 13 | 18 | 23 |
+
+
+För att samma funktion som ovan i med programmering skriver vi
+Så här i programmerings språket C som används på Arduino.
+
+``` c
+int y(int x){           // Returnera ett heltal från funktionen y som tar x som argument
+    int resultat = 5*x - 2;    // spara resultatet av matten i en variabel.
+    return resultat; // skicka tillbaka resultatet.
+}
+```
+
+
+
 
 Så i vårat fall kanske vi vill bryta ut fyllningen av glaset till en separat funktion.
 

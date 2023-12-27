@@ -119,7 +119,7 @@ $$ y = 5*x - 2 $$
 
 Sätter vi upp en tabell för alla värden mellan $-2$ och $5$ så kan en tabell se ut ungefär så här:
 
-| x | -2 | -1 | 0 | 1 | 2 | 3 | 4 | 5 |
+| x | -2  | -1 | 0  | 1 | 2 | 3  | 4  | 5  |
 | y | -12 | -7 | -2 | 3 | 8 | 13 | 18 | 23 |
 
 

@@ -1,0 +1,13 @@
+@startuml
+start
+
+
+:Tidigare steg...;
+if (<back:green>Är det mörkt ute) then (Ja)
+    #green:Slå på lyset i rummet;
+endif
+:Nästa steg...;
+
+
+stop
+@enduml

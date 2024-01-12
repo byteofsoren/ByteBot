@@ -19,7 +19,10 @@ if milk exists in frige{  // Om mjölken existerar i kylskåpet.
     pore milk in glas.    // Häll mjölken i glasset.
 }
 ```
-Den nya raden som börjar med `if` är ett så kallad villkor.
+Den nya raden som börjar med `if` är ett så kallad villkor och raden är en villkors sats.
+
+
+
 Villkoret ser i det här fallet till att det finns en mjölk i kylskåpet och endast om det finns det tar vi fram mjölken i kylskåpet, serverar mjölken i ett glas.
 Finns det ingen mjölk gör vi inget.
 
@@ -133,9 +136,6 @@ int y(int x){           // Returnera ett heltal från funktionen y som tar x som
     return resultat; // skicka tillbaka resultatet.
 }
 ```
-
-
-
 
 Så i vårat fall kanske vi vill bryta ut fyllningen av glaset till en separat funktion.
 
